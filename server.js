@@ -10,7 +10,6 @@ const PORT=3004;
 app.set("view engine","ejs");
 
 app.get("/",(req,res) => {
-    console.log("Done");
    res.render("index",{name:"Hamza Baig"});
 });
 
@@ -44,7 +43,6 @@ app.get("/downloadServer",(req,res) => {
 });
 
 app.get("*",(req,res) => {
-    console.log("PAGE NOT FOUND");
     res.send("You must be lost!");
 });
 
